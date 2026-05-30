@@ -1,0 +1,242 @@
+/* Coastal Tourism Theme - Complete Styling */
+
+/* Ocean Color Palette */
+:root {
+  --ocean-dark: #001a33;
+  --ocean-medium: #003d66;
+  --ocean-light: #0066cc;
+  --teal-glow: #00d4cc;
+  --teal-light: #4dd9e8;
+  --sand-gold: #f4d03f;
+  --coral-warm: #ff6b35;
+  --coral-pink: #ff4757;
+  --wave-foam: #e8f4f8;
+  --sea-green: #00a86b;
+  --aqua-blue: #06aed5;
+}
+
+/* Main Background - Ocean Gradient */
+body, main, .app-container {
+  background: linear-gradient(135deg, #001a33 0%, #003d66 50%, #0066cc 100%);
+  color: #e8f4f8;
+}
+
+/* Buttons - Coastal Style */
+button, .btn, .button {
+  background: linear-gradient(135deg, #00d4cc, #4dd9e8);
+  color: #001a33;
+  border: 1px solid rgba(77, 217, 232, 0.5);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover, .button:hover {
+  background: linear-gradient(135deg, #4dd9e8, #00d4cc);
+  box-shadow: 0 6px 20px rgba(0, 212, 204, 0.4);
+  transform: translateY(-3px);
+}
+
+button:active, .btn:active, .button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 10px rgba(0, 212, 204, 0.3);
+}
+
+/* Primary Button */
+.btn-primary {
+  background: linear-gradient(135deg, #0066cc, #00d4cc);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: rgba(77, 217, 232, 0.2);
+  color: #4dd9e8;
+  border: 2px solid #4dd9e8;
+}
+
+.btn-secondary:hover {
+  background: rgba(77, 217, 232, 0.3);
+  box-shadow: 0 6px 15px rgba(77, 217, 232, 0.3);
+}
+
+/* Input Fields */
+input, textarea, select, .input-field {
+  background: rgba(232, 244, 248, 0.08);
+  border: 2px solid rgba(77, 217, 232, 0.3);
+  color: #e8f4f8;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(232, 244, 248, 0.5);
+}
+
+input:focus, textarea:focus, select:focus, .input-field:focus {
+  outline: none;
+  border-color: #4dd9e8;
+  background: rgba(77, 217, 232, 0.15);
+  box-shadow: 0 0 15px rgba(77, 217, 232, 0.4);
+}
+
+/* Cards */
+.card, .beach-card, .hotel-card, .activity-card, .dish-card {
+  background: linear-gradient(135deg, rgba(0, 61, 102, 0.8), rgba(0, 102, 204, 0.6));
+  border: 1px solid rgba(77, 217, 232, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover, .beach-card:hover, .hotel-card:hover, .activity-card:hover, .dish-card:hover {
+  border-color: #4dd9e8;
+  box-shadow: 0 12px 35px rgba(77, 217, 232, 0.25), 0 0 20px rgba(0, 212, 204, 0.15);
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.9), rgba(0, 150, 204, 0.7));
+}
+
+/* Heading Colors */
+h1, h2, h3, h4, h5, h6 {
+  color: #e8f4f8;
+  text-shadow: 0 2px 10px rgba(0, 212, 204, 0.2);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Links */
+a {
+  color: #4dd9e8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #00d4cc;
+  text-shadow: 0 0 10px rgba(77, 217, 232, 0.5);
+}
+
+/* Badge/Tag Styles */
+.badge, .tag, .label {
+  background: rgba(0, 212, 204, 0.2);
+  color: #4dd9e8;
+  border: 1px solid rgba(77, 217, 232, 0.5);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Navigation Links */
+nav a, .nav-link {
+  color: rgba(232, 244, 248, 0.8);
+  transition: all 0.3s ease;
+}
+
+nav a:hover, .nav-link:hover {
+  color: #4dd9e8;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #4dd9e8;
+}
+
+/* Section Headers */
+.section-title {
+  color: #e8f4f8;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-shadow: 0 4px 20px rgba(0, 212, 204, 0.2);
+  margin-bottom: 30px;
+}
+
+/* Dividers */
+hr, .divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(77, 217, 232, 0.5), transparent);
+  margin: 20px 0;
+}
+
+/* Accent Text */
+.accent-text, .highlight {
+  color: #4dd9e8;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(77, 217, 232, 0.3);
+}
+
+.accent-warm { color: #ff6b35; }
+.accent-coral { color: #ff4757; }
+.accent-sand { color: #f4d03f; }
+
+/* Success, Warning, Error States */
+.success {
+  color: #00a86b;
+  background: rgba(0, 168, 107, 0.1);
+  border-color: #00a86b;
+}
+
+.warning {
+  color: #f4d03f;
+  background: rgba(244, 208, 63, 0.1);
+  border-color: #f4d03f;
+}
+
+.error {
+  color: #ff4757;
+  background: rgba(255, 71, 87, 0.1);
+  border-color: #ff4757;
+}
+
+/* Scrollbar - Coastal Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 26, 51, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00d4cc, #4dd9e8);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4dd9e8, #00d4cc);
+}
+
+/* Transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Loading Spinner - Coastal */
+.spinner {
+  border: 3px solid rgba(77, 217, 232, 0.2);
+  border-top-color: #4dd9e8;
+  border-right-color: #00d4cc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+  .section-title { font-size: 1.8rem; }
+}

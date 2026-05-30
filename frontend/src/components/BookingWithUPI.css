@@ -1,0 +1,383 @@
+/* Premium Dark Glassmorphic Design for BookingWithUPI */
+
+.booking-upi-container {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 0;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.booking-card {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(45, 212, 191, 0.15);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ambient subtle glows inside the card */
+.booking-card::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 140px;
+  height: 140px;
+  background: rgba(45, 212, 191, 0.08);
+  border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.booking-card h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.025em;
+  background: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.booking-card h3 {
+  color: #2dd4bf;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 1px solid rgba(45, 212, 191, 0.1);
+  padding-bottom: 8px;
+}
+
+/* Booking Summary & Contact Section styling */
+.booking-summary,
+.contact-section {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(45, 212, 191, 0.08);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.booking-summary:hover,
+.contact-section:hover {
+  border-color: rgba(45, 212, 191, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.summary-item,
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  font-size: 13px;
+}
+
+.summary-item:last-child,
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.summary-item.total {
+  border-top: 1px dashed rgba(45, 212, 191, 0.2);
+  padding-top: 12px;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.summary-item .label,
+.contact-item .label {
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.summary-item .value,
+.contact-item .value {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.summary-item.total .label {
+  color: #f8fafc;
+}
+
+.summary-item.total .value {
+  color: #2dd4bf;
+  text-shadow: 0 0 10px rgba(45, 212, 191, 0.3);
+}
+
+/* Payment Methods display */
+.payment-methods {
+  background: rgba(13, 148, 136, 0.04);
+  border: 1px solid rgba(13, 148, 136, 0.1);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.methods-info {
+  color: #94a3b8;
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.method-icons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.method-icon {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #cbd5e1;
+  text-align: center;
+  flex: 1;
+  min-width: 80px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.method-icon:hover {
+  border-color: rgba(45, 212, 191, 0.4);
+  background: rgba(45, 212, 191, 0.05);
+  color: #2dd4bf;
+  box-shadow: 0 0 12px rgba(45, 212, 191, 0.1);
+  cursor: pointer;
+}
+
+/* Error Message */
+.error-message {
+  background: rgba(244, 63, 94, 0.08);
+  border: 1px solid rgba(244, 63, 94, 0.2);
+  padding: 12px 16px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fda4af;
+  font-size: 13px;
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-icon {
+  font-size: 18px;
+}
+
+/* Action Buttons */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.25);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: rgba(30, 41, 59, 0.5);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Security Note */
+.security-note {
+  background: rgba(16, 185, 129, 0.04);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  padding: 12px 16px;
+  border-radius: 14px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a7f3d0;
+  font-size: 11px;
+}
+
+.security-icon {
+  font-size: 16px;
+}
+
+/* Simulated Checkout Overlay */
+.mock-checkout-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 13, 28, 0.95);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+.mock-checkout-card {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.mock-checkout-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.mock-checkout-card h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mock-checkout-card p {
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.mock-checkout-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-mock-success {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.btn-mock-success:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 6px 16px rgba(52, 211, 153, 0.35);
+}
+
+.btn-mock-fail {
+  background: linear-gradient(135deg, #f43f5e 0%, #be123c 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.2);
+}
+
+.btn-mock-fail:hover {
+  background: linear-gradient(135deg, #fb7185 0%, #f43f5e 100%);
+  box-shadow: 0 6px 16px rgba(251, 113, 133, 0.35);
+}
+
+.spinner-glow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid rgba(45, 212, 191, 0.1);
+  border-top-color: #2dd4bf;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite, glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px rgba(45, 212, 191, 0.1); }
+  to { box-shadow: 0 0 20px rgba(45, 212, 191, 0.4); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .booking-card {
+    padding: 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .method-icons {
+    flex-direction: column;
+  }
+
+  .method-icon {
+    min-width: 100%;
+  }
+
+  .summary-item,
+  .contact-item {
+    font-size: 12px;
+  }
+}

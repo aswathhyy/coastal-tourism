@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', 'Montserrat', sans-serif;
+  /* Ocean & Coastal Colors */
+  --color-ocean-dark: #001a33;
+  --color-ocean-medium: #003d66;
+  --color-ocean-light: #0066cc;
+  --color-teal-glow: #00d4cc;
+  --color-teal-light: #4dd9e8;
+  --color-coast-sand: #f4d03f;
+  --color-coast-warm: #ff6b35;
+  --color-coast-coral: #ff4757;
+  --color-wave-foam: #e8f4f8;
+  --color-sea-green: #00a86b;
+  --color-aqua: #06aed5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #031525;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d4b75;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #14b8a6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #001a33 0%, #003d66 50%, #0066cc 100%);
+  color: #e8f4f8;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+/* Glassmorphism Styles - Coastal Theme */
+.glass-nav {
+  background: linear-gradient(135deg, rgba(0, 26, 51, 0.75), rgba(0, 61, 102, 0.65));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 212, 204, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 212, 204, 0.1);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.15), rgba(0, 212, 204, 0.1));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(77, 217, 232, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 26, 51, 0.37), 0 0 20px rgba(0, 212, 204, 0.1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(77, 217, 232, 0.5);
+  box-shadow: 0 12px 40px 0 rgba(77, 217, 232, 0.2), 0 0 30px rgba(0, 212, 204, 0.2);
+  transform: translateY(-4px);
+}
+
+.glass-input {
+  background: rgba(0, 61, 102, 0.4);
+  border: 1px solid rgba(77, 217, 232, 0.3);
+  border-radius: 8px;
+  color: #e8f4f8;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: #4dd9e8;
+  box-shadow: 0 0 15px rgba(77, 217, 232, 0.4);
+  background: rgba(0, 102, 204, 0.2);
+}
+
+/* Custom Text and Glow utilities - Coastal Theme */
+.text-gradient {
+  background: linear-gradient(135deg, #e8f4f8 30%, #4dd9e8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-teal-gradient {
+  background: linear-gradient(135deg, #4dd9e8 0%, #00d4cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-ocean-gradient {
+  background: linear-gradient(135deg, #0066cc 0%, #00d4cc 50%, #4dd9e8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.district-glow:hover {
+  box-shadow: 0 0 30px rgba(77, 217, 232, 0.5);
+}
+
+.coastal-glow {
+  background: linear-gradient(135deg, rgba(0, 212, 204, 0.1), rgba(77, 217, 232, 0.1));
+  box-shadow: 0 0 20px rgba(77, 217, 232, 0.2);
+}
+
+/* Keyframe Animations - Wave & Ocean Effects */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-wave {
+  animation: wave 3s linear infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    box-shadow: 0 0 15px rgba(77, 217, 232, 0.3);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 30px rgba(77, 217, 232, 0.6);
+  }
+}
+
+@keyframes ocean-drift {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  33% { transform: translateX(10px) translateY(-5px); }
+  66% { transform: translateX(-10px) translateY(5px); }
+}
+
+.animate-ocean-drift {
+  animation: ocean-drift 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+/* Zigzag image layout transitions */
+.zigzag-image {
+  clip-path: polygon(0 0, 100% 4%, 100% 96%, 0% 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.zigzag-image:hover {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Custom Hide Scrollbar for Horizontal Scrollers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
