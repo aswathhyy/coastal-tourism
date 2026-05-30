@@ -1,0 +1,609 @@
+{
+  "districts": [
+    {
+      "id": "trivandrum",
+      "name": "Thiruvananthapuram",
+      "tagline": "The Sunrise Capital & Majestic Cliffs",
+      "image": "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=800&q=80",
+      "placeCount": 18,
+      "description": "Thiruvananthapuram, built on seven hills, offers a beautiful blend of rich heritage and spectacular coastal landscapes. Home to the legendary Kovalam Beach and the breathtaking cliffs of Varkala, this southern gem is a haven for wellness seekers, beach lovers, and history buffs."
+    },
+    {
+      "id": "alappuzha",
+      "name": "Alappuzha",
+      "tagline": "The Venice of the East",
+      "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800&q=80",
+      "placeCount": 12,
+      "description": "Famous for its vast network of shimmering canals, houseboats, and endless lagoons, Alappuzha is where the sea kisses the backwaters. From the peaceful shoreline of Marari to the historic Alappuzha lighthouse and pier, it offers an incredibly tranquil coastal experience."
+    },
+    {
+      "id": "ernakulam",
+      "name": "Ernakulam (Kochi)",
+      "tagline": "The Queen of the Arabian Sea",
+      "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+      "placeCount": 15,
+      "description": "A vibrant hub where history, modernity, and diverse cultures merge. Ernakulam showcases legendary Chinese fishing nets, historic colonial structures of Fort Kochi, and the pristine golden sands of Cherai Beach, where backwaters flow alongside the ocean."
+    },
+    {
+      "id": "kozhikode",
+      "name": "Kozhikode",
+      "tagline": "The Culinary Coast & Historic Shores",
+      "image": "https://images.unsplash.com/photo-1598977123418-45f04b61b49e?auto=format&fit=crop&w=800&q=80",
+      "placeCount": 14,
+      "description": "Kozhikode is legendary as the historic spice capital where Vasco da Gama first stepped foot in India at Kappad Beach. Known today for its warm hospitality, bustling historic pier, golden sunsets, and world-famous coastal delicacies like Calicut Biryani."
+    },
+    {
+      "id": "kannur",
+      "name": "Kannur",
+      "tagline": "The Land of Theyyam & Drive-in Shores",
+      "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+      "placeCount": 16,
+      "description": "Known for its vibrant Theyyam rituals, high looms, and unique shoreline, Kannur hosts Muzhappilangad, Asia's longest and most famous drive-in beach. It is a stunning blend of deep folk culture, rugged cliffs, and pristine sands."
+    },
+    {
+      "id": "kasaragod",
+      "name": "Kasaragod",
+      "tagline": "The Realm of Forts & Rivers",
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80",
+      "placeCount": 10,
+      "description": "The northernmost coast of Kerala, Kasaragod is a treasure trove of pristine beaches, majestic coastal fortresses like Bekal Fort, and winding rivers. It offers unmatched tranquility, rich folklore, and gorgeous scenic overlooks of the Arabian Sea."
+    }
+  ],
+  "beaches": [
+    {
+      "id": "varkala",
+      "districtId": "trivandrum",
+      "name": "Varkala Beach",
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "Famous for its unique high red cliffs, natural mineral springs, and breathtaking sunset viewpoints over the Arabian Sea.",
+      "detailedDescription": "Varkala Beach, also known as Papanasam Beach, is a spectacular coastal wonder in southern Kerala. It is renowned for its unique geological formation—majestic red clay cliffs rising directly adjacent to the Arabian Sea. Natural mineral springs gush from these cliffs, believed by locals to have sacred therapeutic properties. The beach is a popular hub for yoga, surfing, cliffside dining, and spiritual rejuvenation.",
+      "rating": 4.8,
+      "location": "Varkala, Thiruvananthapuram",
+      "priceRange": "$$$",
+      "mood": "romantic",
+      "activities": [
+        "surfing",
+        "sunset",
+        "boating",
+        "kayaking",
+        "seafood"
+      ]
+    },
+    {
+      "id": "kovalam",
+      "districtId": "trivandrum",
+      "name": "Kovalam Beach",
+      "image": "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "An internationally famous beach with a giant red-and-white striped lighthouse, calm waters, and active watersports.",
+      "detailedDescription": "Kovalam Beach is an iconic crescent-shaped beach comprised of three adjacent beaches separated by rocky outcroppings. The most famous is Lighthouse Beach, dominated by the majestic Vizhinjam Lighthouse. Visitors can climb to the top for sweeping views of the coastline. Kovalam is highly active, featuring surfing schools, catamarans, premium Ayurvedic resorts, and bustling seaside cafes.",
+      "rating": 4.7,
+      "location": "Kovalam, Thiruvananthapuram",
+      "priceRange": "$$$$",
+      "mood": "adventure",
+      "activities": [
+        "surfing",
+        "boating",
+        "sunset",
+        "seafood"
+      ]
+    },
+    {
+      "id": "marari",
+      "districtId": "alappuzha",
+      "name": "Marari Beach",
+      "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "A peaceful, secluded golden-sand paradise surrounded by coconut groves, perfect for relaxation and mindfulness.",
+      "detailedDescription": "Marari Beach is a pristine, undeveloped stretch of white sand located near Alleppey. Surrounded by towering coconut palms and sleepy traditional fishing villages, Marari offers a tranquil escape from commercial tourism. It is ideal for relaxing, reading, swimming, and experiencing the slower pace of local coastal life.",
+      "rating": 4.9,
+      "location": "Mararikulam, Alappuzha",
+      "priceRange": "$$$",
+      "mood": "peaceful",
+      "activities": [
+        "sunset",
+        "fishing",
+        "seafood"
+      ]
+    },
+    {
+      "id": "alappuzha-beach",
+      "districtId": "alappuzha",
+      "name": "Alappuzha Beach",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "Famous for its 150-year-old historic wooden pier, lighthouse, active sand dunes, and evening beach activities.",
+      "detailedDescription": "Alappuzha Beach is a historic coastal landmark known for its iconic, weathered wooden pier that extends into the sea, built over 150 years ago. The beach features a beautiful old lighthouse and expansive white sands that play host to cultural festivals, sand art exhibitions, and children's amusement parks. It is a lively spot where families gather to enjoy sunset views.",
+      "rating": 4.5,
+      "location": "Alappuzha Town",
+      "priceRange": "$$",
+      "mood": "budget",
+      "activities": [
+        "boating",
+        "sunset",
+        "seafood"
+      ]
+    },
+    {
+      "id": "cherai",
+      "districtId": "ernakulam",
+      "name": "Cherai Beach",
+      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "A picturesque 15km stretch where the ocean meets the calm backwaters, famous for frequent dolphin sightings.",
+      "detailedDescription": "Cherai Beach is situated on the northern end of Vypin Island in Kochi. This beach is uniquely positioned with the Arabian Sea on one side and the calm backwaters on the other. It is low, flat, and shallow, making it perfect for swimming and sunbathing. Sighting playful dolphins leaping in the near distance is a regular treat for visitors here.",
+      "rating": 4.6,
+      "location": "Vypin Island, Kochi",
+      "priceRange": "$$$",
+      "mood": "adventure",
+      "activities": [
+        "boating",
+        "kayaking",
+        "sunset",
+        "seafood"
+      ]
+    },
+    {
+      "id": "fort-kochi",
+      "districtId": "ernakulam",
+      "name": "Fort Kochi Beach",
+      "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "A historic shoreline lined with massive Chinese Fishing Nets, colonial pathways, and beautiful sunset views.",
+      "detailedDescription": "Fort Kochi Beach is a scenic, historic coast in the heart of Kochi's heritage zone. It is world-renowned for its massive Chinese Fishing Nets (Cheena Vala) towering gracefully over the water. A walkway runs along the shore, shaded by large trees, perfect for evening strolls. Visitors can watch fishermen operate the nets, explore old colonial buildings, and dine in artistic cafes nearby.",
+      "rating": 4.4,
+      "location": "Fort Kochi, Cochin",
+      "priceRange": "$$",
+      "mood": "budget",
+      "activities": [
+        "sunset",
+        "fishing",
+        "seafood"
+      ]
+    },
+    {
+      "id": "muzhappilangad",
+      "districtId": "kannur",
+      "name": "Muzhappilangad Drive-In Beach",
+      "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "Asia's longest drive-in beach where you can drive your car or ride your bike directly on the firm wet sand.",
+      "detailedDescription": "Muzhappilangad Beach is a thrilling coastal marvel and Asia's longest drive-in beach, stretching over 4 kilometers. The sand is exceptionally firm due to the natural black rocks acting as a barrier against heavy waves. Visitors can drive their cars and bikes directly along the waves. The beach hosts an annual beach festival with parasailing, water sports, and stunt shows.",
+      "rating": 4.9,
+      "location": "Muzhappilangad, Kannur",
+      "priceRange": "$$$",
+      "mood": "adventure",
+      "activities": [
+        "sunset",
+        "seafood",
+        "boating"
+      ]
+    },
+    {
+      "id": "bekal",
+      "districtId": "kasaragod",
+      "name": "Bekal Beach & Fort",
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "shortDescription": "A majestic coastal beach overlooked by the colossal 17th-century Bekal Fort rising out of the sea.",
+      "detailedDescription": "Bekal Beach is a grand, pristine coastline characterized by its absolute purity and the towering presence of Bekal Fort—the largest and best-preserved keyhole-shaped fort in Kerala. The fort's stone bastions rise directly out of the ocean waves, offering incredible panoramic views of the coastal expanse. The beach has beautiful landscaped parks, walk paths, and illuminating lights for magical night views.",
+      "rating": 4.8,
+      "location": "Bekal, Kasaragod",
+      "priceRange": "$$$$",
+      "mood": "romantic",
+      "activities": [
+        "sunset",
+        "boating",
+        "seafood"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "id": "h1",
+      "beachId": "varkala",
+      "name": "Elixir Cliff Beach Resort",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
+      "rating": 4.8,
+      "location": "North Cliff, Varkala",
+      "price": 140,
+      "facilities": [
+        "Ocean View",
+        "Infinity Pool",
+        "Ayurvedic Spa",
+        "Free Wi-Fi",
+        "Restaurant"
+      ]
+    },
+    {
+      "id": "h2",
+      "beachId": "varkala",
+      "name": "Soul & Surf Sanctuary",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
+      "rating": 4.6,
+      "location": "South Cliff, Varkala",
+      "price": 95,
+      "facilities": [
+        "Surf School",
+        "Yoga Shala",
+        "Cafe",
+        "Hammocks",
+        "Ocean Front"
+      ]
+    },
+    {
+      "id": "h3",
+      "beachId": "kovalam",
+      "name": "The Leela Raviz Kovalam",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80",
+      "rating": 4.9,
+      "location": "Kovalam Beach Cliff",
+      "price": 280,
+      "facilities": [
+        "Private Beach",
+        "Clifftop Pool",
+        "Fine Dining",
+        "Valet",
+        "Ultra Luxury"
+      ]
+    },
+    {
+      "id": "h4",
+      "beachId": "marari",
+      "name": "Marari Beach Resort - CGH Earth",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80",
+      "rating": 4.9,
+      "location": "Mararikulam, Alleppey",
+      "price": 210,
+      "facilities": [
+        "Eco Luxury",
+        "Organic Garden",
+        "Huge Pool",
+        "Beachside Dining",
+        "Bicycles"
+      ]
+    },
+    {
+      "id": "h5",
+      "beachId": "cherai",
+      "name": "Cherai Beach Resort",
+      "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=600&q=80",
+      "rating": 4.4,
+      "location": "Cherai Beach Road, Kochi",
+      "price": 85,
+      "facilities": [
+        "Backwater Canal",
+        "Spa",
+        "Hammocks",
+        "Kids Play Area",
+        "Gym"
+      ]
+    },
+    {
+      "id": "h6",
+      "beachId": "bekal",
+      "name": "Taj Bekal Resort & Spa",
+      "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=80",
+      "rating": 4.9,
+      "location": "Kappil Beach, Bekal",
+      "price": 250,
+      "facilities": [
+        "Private Plunge Pool",
+        "Kayak Boating",
+        "Sprawling Gardens",
+        "Luxury Spa",
+        "Ocean Deck"
+      ]
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "r1",
+      "beachId": "varkala",
+      "name": "Darjeeling Cafe",
+      "type": "Cafe & Bar",
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80",
+      "rating": 4.7,
+      "priceRange": "$$",
+      "location": "North Cliff, Varkala",
+      "specialty": "Grilled Calamari, Avocado Toast, Cocktails"
+    },
+    {
+      "id": "r2",
+      "beachId": "varkala",
+      "name": "Abba Restaurant & Bakery",
+      "type": "Seafood Restaurant",
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=400&q=80",
+      "rating": 4.5,
+      "priceRange": "$$$",
+      "location": "North Cliff, Varkala",
+      "specialty": "Kerala Fish Pollichathu, Lobster, German Bakery items"
+    },
+    {
+      "id": "r3",
+      "beachId": "kovalam",
+      "name": "Bait Seafood Restaurant",
+      "type": "Seafood Restaurant",
+      "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=400&q=80",
+      "rating": 4.8,
+      "priceRange": "$$$$",
+      "location": "The Leela, Kovalam",
+      "specialty": "Tandoori Mud Crab, Jumbo Prawns, Coconut Fish Curry"
+    },
+    {
+      "id": "r4",
+      "beachId": "alappuzha-beach",
+      "name": "Alleppey Beach Seafood Grill",
+      "type": "Local Food Joint",
+      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=400&q=80",
+      "rating": 4.3,
+      "priceRange": "$",
+      "location": "Beach Road, Alappuzha",
+      "specialty": "Karimeen Fry (Pearl Spot), Spicy Fried Squid, Toddy shop curries"
+    },
+    {
+      "id": "r5",
+      "beachId": "fort-kochi",
+      "name": "Kashi Art Cafe",
+      "type": "Cafe & Gallery",
+      "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=400&q=80",
+      "rating": 4.6,
+      "priceRange": "$$",
+      "location": "Burgher Street, Fort Kochi",
+      "specialty": "Organic Salads, Cold Brew Coffee, Chocolate Cake"
+    },
+    {
+      "id": "r6",
+      "beachId": "muzhappilangad",
+      "name": "Kannur Coastal Diner",
+      "type": "Local Food Joint",
+      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=400&q=80",
+      "rating": 4.5,
+      "priceRange": "$$",
+      "location": "Drive-in road, Kannur",
+      "specialty": "Malabar Chicken Biryani, Spicy Mussel Fry (Kallummakkaya)"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act1",
+      "beachId": "varkala",
+      "name": "Cliff Paragliding",
+      "image": "https://images.unsplash.com/photo-1596701062351-df5f8a4261e5?auto=format&fit=crop&w=600&q=80",
+      "description": "Soar over the high cliffs of Varkala and glide above the blue waters of the Arabian Sea with a certified pilot.",
+      "duration": "15-20 Minutes",
+      "price": 45
+    },
+    {
+      "id": "act2",
+      "beachId": "varkala",
+      "name": "Surfing Lesson",
+      "image": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=600&q=80",
+      "description": "Learn to catch waves with professional surf instructors on the beautiful beaches of Varkala cliff.",
+      "duration": "2 Hours",
+      "price": 25
+    },
+    {
+      "id": "act3",
+      "beachId": "kovalam",
+      "name": "Catamaran Boating",
+      "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=600&q=80",
+      "description": "Ride the waves on a traditional wooden catamaran boat guided by local Kovalam fishermen.",
+      "duration": "1 Hour",
+      "price": 18
+    },
+    {
+      "id": "act4",
+      "beachId": "marari",
+      "name": "Traditional Coastal Fishing",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
+      "description": "Go out to sea on a fishing boat or cast nets with local Marari villagers, cooking your fresh catch afterwards.",
+      "duration": "3 Hours",
+      "price": 30
+    },
+    {
+      "id": "act5",
+      "beachId": "cherai",
+      "name": "Backwater Kayaking",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
+      "description": "Paddle through the serene, narrow canals and lagoons of Cherai, observing birds and local village life.",
+      "duration": "2.5 Hours",
+      "price": 15
+    },
+    {
+      "id": "act6",
+      "beachId": "muzhappilangad",
+      "name": "Jet Ski & Water Sports",
+      "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=600&q=80",
+      "description": "Race across the safe, shallow drive-in shoreline on a powerful high-speed personal watercraft.",
+      "duration": "15 Minutes",
+      "price": 20
+    },
+    {
+      "id": "act7",
+      "beachId": "bekal",
+      "name": "Fort Heritage Exploration",
+      "image": "https://images.unsplash.com/photo-1544085311-11a028465b03?auto=format&fit=crop&w=600&q=80",
+      "description": "Explore the gigantic keyhole structure, observation towers, and dark stone battlements of the ancient Bekal Fort.",
+      "duration": "3 Hours",
+      "price": 10
+    }
+  ],
+  "guides": [
+    {
+      "id": "g1",
+      "districtId": "trivandrum",
+      "name": "Sreejith K.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "8 Years",
+      "languages": [
+        "English",
+        "Malayalam",
+        "Hindi"
+      ],
+      "contact": "+91 98456 12345"
+    },
+    {
+      "id": "g2",
+      "districtId": "trivandrum",
+      "name": "Rahul M.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "5 Years",
+      "languages": [
+        "English",
+        "Tamil",
+        "Malayalam"
+      ],
+      "contact": "+91 98456 54321"
+    },
+    {
+      "id": "g3",
+      "districtId": "alappuzha",
+      "name": "Joseph Fernandez",
+      "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "12 Years",
+      "languages": [
+        "English",
+        "German",
+        "Malayalam"
+      ],
+      "contact": "+91 97455 67890"
+    },
+    {
+      "id": "g4",
+      "districtId": "alappuzha",
+      "name": "Manesh Mohan",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "6 Years",
+      "languages": [
+        "English",
+        "Malayalam",
+        "Hindi"
+      ],
+      "contact": "+91 97455 12345"
+    },
+    {
+      "id": "g5",
+      "districtId": "ernakulam",
+      "name": "Antony D'Silva",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "10 Years",
+      "languages": [
+        "English",
+        "French",
+        "Malayalam",
+        "Portuguese"
+      ],
+      "contact": "+91 95466 77889"
+    },
+    {
+      "id": "g6",
+      "districtId": "ernakulam",
+      "name": "Meera Nair",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "4 Years",
+      "languages": [
+        "English",
+        "Malayalam",
+        "Hindi",
+        "Sanskrit"
+      ],
+      "contact": "+91 95466 11223"
+    },
+    {
+      "id": "g7",
+      "districtId": "kozhikode",
+      "name": "Faisal Rahman",
+      "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "7 Years",
+      "languages": [
+        "English",
+        "Arabic",
+        "Malayalam"
+      ],
+      "contact": "+91 94477 33445"
+    },
+    {
+      "id": "g8",
+      "districtId": "kozhikode",
+      "name": "Vikram Sen",
+      "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "9 Years",
+      "languages": [
+        "English",
+        "Bengali",
+        "Malayalam",
+        "Hindi"
+      ],
+      "contact": "+91 94477 99887"
+    },
+    {
+      "id": "g9",
+      "districtId": "kannur",
+      "name": "Pranav Rajesh",
+      "image": "https://images.unsplash.com/photo-1489980508314-941910ded1f4?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "5 Years",
+      "languages": [
+        "English",
+        "Malayalam",
+        "Kannada"
+      ],
+      "contact": "+91 91888 11223"
+    },
+    {
+      "id": "g10",
+      "districtId": "kannur",
+      "name": "Kiran Das",
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "11 Years",
+      "languages": [
+        "English",
+        "Malayalam",
+        "Hindi",
+        "Tulu"
+      ],
+      "contact": "+91 91888 44556"
+    },
+    {
+      "id": "g11",
+      "districtId": "kasaragod",
+      "name": "Shabbir Ahmad",
+      "image": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "15 Years",
+      "languages": [
+        "English",
+        "Urdu",
+        "Kannada",
+        "Malayalam"
+      ],
+      "contact": "+91 99955 66778"
+    },
+    {
+      "id": "g12",
+      "districtId": "kasaragod",
+      "name": "Sreekanth V.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300&q=80",
+      "experience": "6 Years",
+      "languages": [
+        "English",
+        "Malayalam",
+        "Kannada"
+      ],
+      "contact": "+91 99955 11223"
+    }
+  ],
+  "bookings": [],
+  "users": [
+    {
+      "id": "u_1779786617965yyl",
+      "name": "archana b s",
+      "email": "2006archanbs@gmail.com",
+      "phone": "",
+      "password": "$2a$10$xpUbV510B8manphy20D4eealrKtbs9ru8RsPh7qB1B6bbteHz3DD6",
+      "favoriteBeaches": [],
+      "favoriteDistricts": []
+    },
+    {
+      "id": "u_177978678881104w",
+      "name": "adi",
+      "email": "adi@gmail.com",
+      "phone": "",
+      "password": "$2a$10$CHJ/V0RbxJNhsc9Nf8maO.bIQhHFeEE9hZNdB/kYDr82KCFKemjKe",
+      "favoriteBeaches": [],
+      "favoriteDistricts": []
+    }
+  ]
+}
